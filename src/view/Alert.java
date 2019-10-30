@@ -64,13 +64,13 @@ public class Alert extends WindowStage {
         return judge;
     }
 
-    public void setInformation(String Text) {
-        ((Label) $("information")).setText(Text);
+    public void setInformation(String text) {
+        ((Label) $("information")).setText(text);
     }
 
-    public void setModality(WindowStage Own) {
+    public void setModality(WindowStage own) {
         initModality(Modality.APPLICATION_MODAL);
-        initOwner(Own);
+        initOwner(own);
     }
 
 }
