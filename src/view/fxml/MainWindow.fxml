@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="MainWindow" prefHeight="700.0" prefWidth="1324.0" stylesheets="@../css/MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane id="Me" layoutX="1017.0" prefHeight="700.0" prefWidth="307.0" style="-fx-background-color: deepskyblue;">
+         <children>
+            <Label id="myName" alignment="CENTER" layoutX="80.0" layoutY="210.0" prefHeight="34.0" prefWidth="150.0" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="263.0" prefHeight="31.0" prefWidth="62.0" text="Account:" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="325.0" prefHeight="31.0" prefWidth="62.0" text="Address:" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="392.0" prefHeight="31.0" prefWidth="62.0" text="Phone:" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Label>
+            <Button id="more" layoutX="219.0" layoutY="446.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="82.0" text="More..." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="15.0" />
+               </font></Button>
+            <Label id="myAccount" layoutX="86.0" layoutY="263.0" prefHeight="31.0" prefWidth="212.0" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font></Label>
+            <Label id="myAddress" layoutX="86.0" layoutY="325.0" prefHeight="34.0" prefWidth="212.0" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font></Label>
+            <Label id="myPhone" layoutX="86.0" layoutY="392.0" prefHeight="31.0" prefWidth="212.0" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font></Label>
+            <Line endX="180.0" layoutX="118.0" layoutY="308.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="180.0" layoutX="118.0" layoutY="371.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="180.0" layoutX="118.0" layoutY="438.0" startX="-100.0" stroke="WHITE" />
+         </children></Pane>
+      <Pane id="bgPane" prefHeight="700.0" prefWidth="1017.0">
+         <children>
+            <Label id="Y_account" layoutX="521.0" layoutY="10.0" prefHeight="24.0" prefWidth="170.0">
+               <font>
+                  <Font name="Bell MT" size="15.0" />
+               </font>
+            </Label>
+            <ListView id="ChatList" layoutX="253.0" layoutY="42.0" prefHeight="499.0" prefWidth="760.0" />
+            <Button id="individual" layoutX="1100.0" layoutY="50.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 100px;" />
+            <TextArea id="input" layoutX="253.0" layoutY="543.0" prefHeight="157.0" prefWidth="695.0" promptText="Send Something...">
+               <padding>
+                  <Insets left="34.0" />
+               </padding>
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font></TextArea>
+            <Pane layoutX="1100.0" layoutY="50.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: transparent;" />
+            <Button id="send" layoutX="951.0" layoutY="652.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="15.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button id="moreF" layoutX="974.0" layoutY="8.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="39.0" />
+         </children></Pane>
+      <ListView id="FriendList" layoutY="42.0" prefHeight="657.0" prefWidth="249.0" />
+      <Button id="setting" layoutX="1050.0" layoutY="654.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" />
+      <Button id="maximization" layoutX="1120.0" layoutY="654.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" />
+      <Button id="minimiser1" layoutX="1190.0" layoutY="654.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" />
+      <Button id="quit1" layoutX="1260.0" layoutY="654.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" />
+      <TextField id="search" layoutY="6.0" prefHeight="31.0" prefWidth="249.0" promptText="输入好友">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="32.0" />
+         </padding>
+      </TextField>
+   </children>
+</Pane>
