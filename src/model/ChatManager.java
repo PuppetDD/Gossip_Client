@@ -55,9 +55,9 @@ public class ChatManager {
         new Lister().start();
     }
 
-    public void send(String Msg) throws IOException {//发送消息  向服务器发送
+    public void send(String msg) throws IOException {//发送消息  向服务器发送
         if (out != null) {
-            out.writeUTF(Msg);
+            out.writeUTF(msg);
             out.flush();
         } else {
             Controller.alert.setInformation("发送失败!");
